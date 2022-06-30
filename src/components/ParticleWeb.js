@@ -2,7 +2,7 @@ import Sketch from "react-p5";
 import Particle from './Particle';
 
 // global constants
-const NUM_PARTICLES = 280;
+const NUM_PARTICLES = 250;
 
 
 // create particle array
