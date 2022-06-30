@@ -4,8 +4,8 @@ const MAX_DIAMETER = 6;
 const BOARDER_PADDING = 10;
 const MIN_SPAWN_WIDTH = BOARDER_PADDING + MAX_DIAMETER;
 const MIN_SPAWN_HEIGHT = BOARDER_PADDING + MAX_DIAMETER;
-const PAIR_DISTANCE = 60
-const SPEED = 0.12;
+const PAIR_DISTANCE = 70;
+const SPEED = 0.2;
 
 
 export default class Particle {
@@ -38,7 +38,7 @@ export default class Particle {
         particles.forEach(p => {
         let distance = p5.dist(this.x, this.y, p.x, p.y);
             if (distance < PAIR_DISTANCE) {
-                p5.stroke(p5.color(255, 255, 255, 12));
+                p5.stroke(p5.color(255, 255, 255, 25));
                 p5.line(this.x, this.y, p.x, p.y);
             }
         });
@@ -46,7 +46,7 @@ export default class Particle {
 
     render(p5) {
         p5.noStroke();
-        p5.fill(p5.color(255, 255, 255, 40));
+        p5.fill(p5.color(255, 255, 255, 70));
         p5.circle(this.x, this.y, this.r);
     }
 
