@@ -1,7 +1,10 @@
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import ParticleWeb from "./ParticleWeb";
+import ParticleWebP5 from "./ParticleWebP5";
+import ParticleWebTS from "./ParticleWebTS";
+// import ParticleWeb from "./ParticleWeb";
+// import ParticleWebGL from "./ParticleWebGL";
 import { ReactComponent as Logo } from "../img/logo_hexigon.svg";
 import SceneRender from "./SceneRender";
 
@@ -15,7 +18,10 @@ export default function Landing() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <div className="absolute">
-        <ParticleWeb width={window.innerWidth} height={window.innerHeight} />
+        {/* <ParticleWebP5 width={window.innerWidth} height={window.innerHeight} /> */}
+        <ParticleWebTS width={window.innerWidth} height={window.innerHeight} />
+        {/* <ParticleWeb width={window.innerWidth} height={window.innerHeight} /> */}
+        {/* <ParticleWebGL width={window.innerWidth} height={window.innerHeight} /> */}
       </div>
 
       <div class="relative z-10 pl-16 pb-8 lg:max-w-full lg:w-full">
